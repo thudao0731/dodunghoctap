@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px; 
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    z-index: 99;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 40px;
+    margin-right: 90px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.nav-item:hover {
+    border-bottom: 2px solid #fff;
+}
+
+
+
+.action a {
+    text-decoration: none;
+    font-size: 14px;
+    padding: 6px 6px;
+    background-color: orange;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.slides {
+    height: calc(100vh - 8px);
+}
+
+.list-product {
+    display: grid;
+    gap: 15px;
+    row-gap: 25px;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 100%;
+    height: 300px;
+    background: #fff;
+    padding: 20px 20px;
+    margin-bottom: 300px;
+}
+
+.product-item {
+    border: 2px solid orange;
+    padding: 10px 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.item-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.product-name {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.product-price {
+    font-size: 14px;
+}
+
+.btn-buy {
+    font-size: 14px;
+    border: none;
+    background: orange;
+    border-radius: 8px;
+    color: #fff;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.btn-buy a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-buy:hover {
+    background-color: black;
+    color: white;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #ffa500;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-bottom {
+    margin: 20px;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #222;
+    border-top: 1px solid #444;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+}
